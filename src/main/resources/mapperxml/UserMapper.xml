@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hj.dao.UserDao" >
+    <resultMap id="BaseResultMap" type="com.hj.entity.User" >
+        <id column="id" property="id" javaType="java.lang.Long" jdbcType="BIGINT"/>
+        <result column="username" property="username" javaType="java.lang.String" jdbcType="VARCHAR"/>
+        <result column="password" property="password" javaType="java.lang.String" jdbcType="VARCHAR"/>
+        <result column="password_salt" property="salt" javaType="java.lang.String" jdbcType="VARCHAR"/>
+    </resultMap>
+    
+    <sql id="Base_Column">
+        username,
+        password,
+        password_salt
+    </sql>
+    
+    <insert id="createUser" parameterType="com.hj.entity.User" useGeneratedKeys="true" keyProperty="id">
+        insert into users (<include refid="Base_Column"/>) values (#{username},#{password},#{salt})
+    </insert>
+
+    <insert id="createUsers" parameterType="java.util.List">
+        insert into users (<include refid="Base_Column"/>) values
+        <foreach collection="list" item="it" separator=",">
+            (#{it.username},#{it.password},#{it.salt})
+        </foreach>
+    </insert>
+
+    <update id="updateUser" parameterType="com.hj.entity.User">
+        update users
+        <set>
+            <if test="username != null">
+                username = #{username}
+            </if>
+            <if test="password != null">
+                password = #{password}
+            </if>
+            <if test="salt != null">
+                password_salt = #{salt}
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteUser" parameterType="java.lang.Long">
+        delete from users where id = #{id}
+    </delete>
+
+    <select id="findOne" parameterType="java.lang.Long" resultMap="BaseResultMap">
+        select id, <include refid="Base_Column"/>
+        from users where id = #{id}
+    </select>
+
+    <select id="findByUsername" parameterType="java.lang.String" resultMap="BaseResultMap">
+        select id, <include refid="Base_Column"/> from
+        users where username = #{username}
+    </select>
+
+</mapper>

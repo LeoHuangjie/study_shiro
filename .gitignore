@@ -1,0 +1,7 @@
+.idea/
+.myumldata
+.project
+*.iml
+*/target
+*.log
+classes/

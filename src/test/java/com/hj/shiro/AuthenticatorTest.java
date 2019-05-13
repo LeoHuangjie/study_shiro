@@ -56,6 +56,6 @@ public class AuthenticatorTest {
         PrincipalCollection principals = subject.getPrincipals();
 
 
-        Assert.assertEquals(2,principals.getRealmNames().size());
+        Assert.assertEquals(1,principals.getRealmNames().size());
     }
 }
