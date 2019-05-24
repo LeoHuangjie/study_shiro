@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9faa10fd-7828-499e-975d-f21270896a8b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hj/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hj/controller/TestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hj/util/intercept/RequestLimitIntercept.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hj/util/intercept/RequestLimitIntercept.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hj/util/redis/RedisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hj/util/redis/RedisUtil.java" afterDir="false" />
     </list>
@@ -25,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hj/controller/TestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="42" column="42" lean-forward="true" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+            <state relative-caret-position="181">
+              <caret line="32" column="56" lean-forward="true" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -34,7 +35,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hj/util/intercept/RequestLimitIntercept.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="394">
@@ -58,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hj/util/redis/RedisUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="190" column="29" lean-forward="true" selection-start-line="190" selection-start-column="29" selection-end-line="190" selection-end-column="29" />
+            <state relative-caret-position="221">
+              <caret line="187" column="9" lean-forward="true" selection-start-line="187" selection-start-column="9" selection-end-line="187" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2478#2479#0" expanded="true" />
@@ -212,10 +213,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/hj/entity/enums/ResultCode.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hj/util/intercept/WebMvcConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application-dev.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hj/controller/TestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hj/dao/TestDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hj/util/intercept/RequestLimitIntercept.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hj/util/redis/RedisUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hj/controller/TestController.java" />
       </list>
     </option>
   </component>
@@ -305,6 +306,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="hj" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="study_shiro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="study_shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="hj" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="study_shiro" type="b2602c69:ProjectViewProjectNode" />
@@ -669,7 +680,7 @@
       <workItem from="1557885583710" duration="1520000" />
       <workItem from="1558148412060" duration="203000" />
       <workItem from="1558663989811" duration="3512000" />
-      <workItem from="1558667894979" duration="10774000" />
+      <workItem from="1558667894979" duration="11034000" />
     </task>
     <servers />
   </component>
@@ -706,13 +717,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49399000" />
+    <option name="totallyTimeSpent" value="49659000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="980" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27106228" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27106228" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -724,11 +734,11 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32995495" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32882884" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39864865" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39864865" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32882884" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32882884" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32882884" />
@@ -1111,16 +1121,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hj/controller/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="42" column="42" lean-forward="true" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -1179,10 +1179,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hj/util/intercept/RequestLimitIntercept.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hj/controller/TestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="83" column="27" selection-start-line="83" selection-start-column="27" selection-end-line="83" selection-end-column="27" />
+        <state relative-caret-position="181">
+          <caret line="32" column="56" lean-forward="true" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1191,14 +1191,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hj/util/redis/RedisUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="190" column="29" lean-forward="true" selection-start-line="190" selection-start-column="29" selection-end-line="190" selection-end-column="29" />
+        <state relative-caret-position="221">
+          <caret line="187" column="9" lean-forward="true" selection-start-line="187" selection-start-column="9" selection-end-line="187" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2478#2479#0" expanded="true" />
             <element signature="e#2543#2544#0" expanded="true" />
             <element signature="e#4070#4071#0" expanded="true" />
             <element signature="e#4127#4128#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hj/util/intercept/RequestLimitIntercept.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="83" column="27" selection-start-line="83" selection-start-column="27" selection-end-line="83" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

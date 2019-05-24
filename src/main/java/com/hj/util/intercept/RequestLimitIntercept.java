@@ -71,7 +71,6 @@ public class RequestLimitIntercept extends HandlerInterceptorAdapter {
         String limitKey = request.getServletPath()+"_"+request.getHeader("appId");
         log.info("-------limitKey:{}",limitKey);
         // 从缓存中获取，当前这个请求访问了几次
-//        Object redisCount =  redisTemplate.opsForValue().get(limitKey);
         Object redisCount = redisUtil.get(limitKey);
         if(redisCount == null){
             //初始 次数
