@@ -140,7 +140,9 @@ public enum ResultCode {
     /**
      * 请求参数为空
      */
-    PARAMS_NULL(400,"输入参数不能为空");
+    PARAMS_NULL(400,"输入参数不能为空"),
+
+    REQUST_LIMIT(501,"过于频繁，请稍后再试");
 
 
 

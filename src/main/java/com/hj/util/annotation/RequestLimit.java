@@ -45,6 +45,8 @@ import java.lang.annotation.*;
 @Target({ElementType.METHOD,ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface RequestLimit {
+    //时间秒
     int second() default 1;
+    //最大次数
     int maxCount() default 1;
 }
