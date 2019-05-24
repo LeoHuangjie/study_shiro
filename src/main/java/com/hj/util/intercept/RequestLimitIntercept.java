@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.hj.entity.enums.ResultCode;
 import com.hj.entity.resultData.ResultData;
 import com.hj.util.annotation.RequestLimit;
+import com.hj.util.redis.RedisUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
@@ -26,8 +27,9 @@ import java.util.concurrent.TimeUnit;
 @Slf4j
 @Component
 public class RequestLimitIntercept extends HandlerInterceptorAdapter {
+
     @Resource
-    private RedisTemplate<String,Object> redisTemplate;
+    private RedisUtil redisUtil;
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
@@ -69,16 +71,17 @@ public class RequestLimitIntercept extends HandlerInterceptorAdapter {
         String limitKey = request.getServletPath()+"_"+request.getHeader("appId");
         log.info("-------limitKey:{}",limitKey);
         // 从缓存中获取，当前这个请求访问了几次
-        Object redisCount =  redisTemplate.opsForValue().get(limitKey);
+//        Object redisCount =  redisTemplate.opsForValue().get(limitKey);
+        Object redisCount = redisUtil.get(limitKey);
         if(redisCount == null){
             //初始 次数
-            redisTemplate.opsForValue().set(limitKey,1,requestLimit.second(), TimeUnit.SECONDS);
+            redisUtil.set(limitKey,1,requestLimit.second(), TimeUnit.SECONDS);
         }else{
             if(((Integer) redisCount).intValue() >= requestLimit.maxCount()){
                 return true;
             }
             // 次数自增
-            redisTemplate.opsForValue().increment(limitKey);
+            redisUtil.increment(limitKey);
         }
         return false;
     }

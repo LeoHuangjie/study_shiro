@@ -147,10 +147,10 @@ public class RedisUtil {
      * @param time  时间(秒) time要大于0 如果time小于等于0 将设置无限期
      * @return true成功 false 失败
      */
-    public boolean set(String key, Object value, long time) {
+    public boolean set(String key, Object value, long time, TimeUnit timeUnit) {
         try {
             if (time > 0) {
-                getOptions().set(key, value, time, TimeUnit.SECONDS);
+                getOptions().set(key, value, time, timeUnit);
             } else {
                 set(key, value);
             }
@@ -173,6 +173,15 @@ public class RedisUtil {
             throw new RuntimeException("递增因子必须大于0");
         }
         return getOptions().increment(key, delta);
+    }
+
+    /**
+     * 递增
+     * @param key   键 每次增加1
+     * @return
+     */
+    public long increment(String key) {
+        return getOptions().increment(key);
     }
 
     /**

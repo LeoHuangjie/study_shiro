@@ -27,7 +27,7 @@ public class TestController {
     private TestService testService;
 
     @RequestMapping("index")
-    @RequestLimit(second = 10)
+    @RequestLimit(second = 10, maxCount = 5)
     public ResultData<Test> test (Integer id) {
         log.info("---------params:{}",id);
         DependenceBase dependenceBase = Factory.get(id);
