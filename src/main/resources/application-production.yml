@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    username: root
+    password: Huangjie@123
+    url: jdbc:p6spy:mysql:replication://47.95.232.64:3306,47.95.232.64:3306/manage?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&connectTimeout=100&autoReconnect=true&failOverReadOnly=false&autoReconnect=true
+  redis:
+    host: 47.95.232.64
+server:
+  port: 8089

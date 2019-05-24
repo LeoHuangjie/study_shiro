@@ -10,11 +10,20 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="IronMan" target="1.8" />
+      <module name="marvel-common" target="1.8" />
+      <module name="marvel-dao" target="1.8" />
+      <module name="marvel-service" target="1.8" />
+      <module name="marvel-web" target="1.8" />
       <module name="study_shiro" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="marvel-common" options="-parameters" />
+      <module name="marvel-dao" options="-parameters" />
+      <module name="marvel-service" options="-parameters" />
+      <module name="marvel-web" options="-parameters" />
       <module name="study_shiro" options="-parameters" />
     </option>
   </component>

@@ -14,7 +14,7 @@ import java.net.Socket;
 
 @SpringBootApplication
 @EnableTransactionManagement
-@ImportResource( locations = {"classpath:dubbo.xml"})//config springxml
+//@ImportResource()//config springxml
 public class SampleStarter {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
@@ -27,6 +27,7 @@ public class SampleStarter {
         bean.logger.info("---------------info");
 
         blockMainWithSocket(configurableApplicationContext);
+
     }
 
 
