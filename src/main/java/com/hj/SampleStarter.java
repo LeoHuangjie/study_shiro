@@ -20,7 +20,7 @@ public class SampleStarter {
     private Logger logger = LoggerFactory.getLogger(getClass());
 
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         final ConfigurableApplicationContext configurableApplicationContext = SpringApplication.run(SampleStarter.class, args);
 
         SampleStarter bean = configurableApplicationContext.getBean(SampleStarter.class);

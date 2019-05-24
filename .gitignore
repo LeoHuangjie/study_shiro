@@ -12,3 +12,4 @@ gen
 .project
 .settings
 *.log*
+target/classes/

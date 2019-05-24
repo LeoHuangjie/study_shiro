@@ -3,7 +3,8 @@ spring:
     username: root
     password: Huangjie@123
     url: jdbc:p6spy:mysql:replication://47.95.232.64:3306,47.95.232.64:3306/manage?autoReconnect=true&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
-#  redis:
-#    host: redis.axxvip.com
+  redis:
+    host: redis.axxvip.com
+    password: axxonline@123!
 server:
   port: 8088

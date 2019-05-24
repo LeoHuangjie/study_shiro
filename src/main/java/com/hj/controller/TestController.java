@@ -7,6 +7,7 @@ import com.hj.entity.resultData.ResultData;
 import com.hj.service.TestService;
 import com.hj.util.NullObject.DependenceBase;
 import com.hj.util.NullObject.Factory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,6 +19,7 @@ import javax.annotation.Resource;
  */
 @RestController
 @RequestMapping("/test")
+@Slf4j
 public class TestController {
 
     @Resource
