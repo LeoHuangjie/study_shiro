@@ -102,6 +102,18 @@ public class RedisUtil {
     }
 
     /**
+     *
+     */
+    public Object getSet (String key, Object object, Integer secondTime) {
+        ValueOperations options = getOptions();
+        Object andSet = options.getAndSet(key, object);
+        if (null == andSet) {
+            redisTemplate.expire(key, secondTime, TimeUnit.SECONDS);
+        }
+        return andSet;
+    }
+
+    /**
      * 普通缓存获取
      *
      * @param key 键

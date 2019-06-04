@@ -19,6 +19,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.lang.reflect.Method;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * @author huangjie
@@ -61,6 +62,7 @@ public class RequestLimitIntercept extends HandlerInterceptorAdapter {
 
     /**
      * 判断请求是否受限
+     * 线程安全的
      * @param request
      * @param requestLimit
      * @return
@@ -68,20 +70,31 @@ public class RequestLimitIntercept extends HandlerInterceptorAdapter {
     private boolean isLimit(HttpServletRequest request,RequestLimit requestLimit){
         // 受限的redis 缓存key ,因为这里用浏览器做测试，就用sessionid 来做唯一key, 如果是app ,可以使用 用户ID 之类的唯一标识。
 //        String limitKey = request.getServletPath()+request.getSession().getId();
-        String limitKey = request.getServletPath()+"_"+request.getHeader("appId");
-        log.info("-------limitKey:{}",limitKey);
-        // 从缓存中获取，当前这个请求访问了几次
-        Object redisCount = redisUtil.get(limitKey);
-        if(redisCount == null){
-            //初始 次数
-            redisUtil.set(limitKey,1,requestLimit.second(), TimeUnit.SECONDS);
-        }else{
-            if(((Integer) redisCount).intValue() >= requestLimit.maxCount()){
-                return true;
+        ReentrantLock reentrantLock = new ReentrantLock();
+        try {
+            reentrantLock.tryLock(500, TimeUnit.MILLISECONDS);
+
+            String limitKey = request.getServletPath()+"_"+request.getHeader("appId");
+            log.info("-------limitKey:{}",limitKey);
+            // 从缓存中获取，当前这个请求访问了几次
+            Object redisCount = redisUtil.get(limitKey);
+            if(redisCount == null){
+                //初始 次数
+                redisUtil.set(limitKey,1,requestLimit.second(), TimeUnit.SECONDS);
+            }else{
+                if(((Integer) redisCount).intValue() >= requestLimit.maxCount()){
+                    return true;
+                }
+                // 次数自增
+                redisUtil.increment(limitKey);
             }
-            // 次数自增
-            redisUtil.increment(limitKey);
+
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }finally {
+            reentrantLock.unlock();
         }
+
         return false;
     }
 
