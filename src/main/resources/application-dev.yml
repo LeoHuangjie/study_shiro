@@ -8,3 +8,8 @@ spring:
     password: axxonline@123!
 server:
   port: 8088
+
+request:
+  i18n:
+    base-names[0]: i18n/validation/ValidationMessages
+    default-encoding: UTF-8

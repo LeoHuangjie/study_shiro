@@ -56,30 +56,30 @@ public class MainConfig {
         return new TestBeanPostProcessor();
     }
 
-    public static void main(String[] args) {
-        AnnotationConfigApplicationContext annotationConfigApplicationContext = new AnnotationConfigApplicationContext(MainConfig.class);
-
-        Student student = (Student) annotationConfigApplicationContext.getBean("student");
-        System.out.println(student);
-//        Student student1 = (Student) annotationConfigApplicationContext.getBean("student");
-//        System.out.println(student1);
-//        boolean equals = student == student1;
-//        System.out.println(equals);
-
-        String[] beanDefinitionNames = annotationConfigApplicationContext.getBeanDefinitionNames();
-        
-        for (int i = 0; i<beanDefinitionNames.length; i++) {
-            System.out.println(beanDefinitionNames[i]);
-        }
-
-
-        Object aixuexiBeanfactory = annotationConfigApplicationContext.getBean("aixuexiBeanfactory");
-        System.out.println(aixuexiBeanfactory);
-        Object bean = annotationConfigApplicationContext.getBean("&aixuexiBeanfactory");
-        System.out.println(bean);
-
-
-        annotationConfigApplicationContext.close();
-
-    }
+//    public static void main(String[] args) {
+//        AnnotationConfigApplicationContext annotationConfigApplicationContext = new AnnotationConfigApplicationContext(MainConfig.class);
+//
+//        Student student = (Student) annotationConfigApplicationContext.getBean("student");
+//        System.out.println(student);
+////        Student student1 = (Student) annotationConfigApplicationContext.getBean("student");
+////        System.out.println(student1);
+////        boolean equals = student == student1;
+////        System.out.println(equals);
+//
+//        String[] beanDefinitionNames = annotationConfigApplicationContext.getBeanDefinitionNames();
+//
+//        for (int i = 0; i<beanDefinitionNames.length; i++) {
+//            System.out.println(beanDefinitionNames[i]);
+//        }
+//
+//
+//        Object aixuexiBeanfactory = annotationConfigApplicationContext.getBean("aixuexiBeanfactory");
+//        System.out.println(aixuexiBeanfactory);
+//        Object bean = annotationConfigApplicationContext.getBean("&aixuexiBeanfactory");
+//        System.out.println(bean);
+//
+//
+//        annotationConfigApplicationContext.close();
+//
+//    }
 }

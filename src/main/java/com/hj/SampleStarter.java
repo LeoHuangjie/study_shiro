@@ -1,5 +1,7 @@
 package com.hj;
 
+import com.battcn.boot.request.annotation.EnableI18n;
+import com.hj.service.impl.CelueMoshi;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -14,6 +16,7 @@ import java.net.Socket;
 
 @SpringBootApplication
 @EnableTransactionManagement
+@EnableI18n
 //@ImportResource()//config springxml
 public class SampleStarter {
 
@@ -25,6 +28,12 @@ public class SampleStarter {
 
         SampleStarter bean = configurableApplicationContext.getBean(SampleStarter.class);
         bean.logger.info("---------------info");
+
+        CelueMoshi bean1 = configurableApplicationContext.getBean(CelueMoshi.class);
+
+        bean1.test(1);
+
+        bean1.test18In();
 
         blockMainWithSocket(configurableApplicationContext);
 
