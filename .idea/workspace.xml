@@ -2,59 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9faa10fd-7828-499e-975d-f21270896a8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/entity/leave/BO/LeaveAuditInfoBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/entity/leave/BO/LeaveInfoBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/entity/leave/BO/LeaveStudentInfoBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/entity/leave/BO/LeaveTeacherInfoBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/entity/leave/BO/LeaveTeaminateInfoBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/entity/leave/BO/LeaveUndoInfoBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/entity/leave/DTO/LeaveAllInfoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/entity/leave/DTO/LeaveBatchReviewDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/entity/leave/DTO/LeaveCalendarListDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/entity/leave/DTO/LeaveListBaseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/entity/leave/DTO/LeaveListDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/entity/leave/DTO/LeaveUndoInfoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/entity/leave/DTO/OperationLogDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/entity/leave/Leave.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/entity/leave/LeaveInfoDO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/entity/leave/LeaveRecordArrangingListDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/entity/leave/LeaveStudentInfoBaseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/entity/leave/MorePopupWindowVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/entity/leave/Page.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/entity/leave/ResultData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/entity/leave/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/leave/api/LeaveCommon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/leave/enums/SystemEnumsGlobal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/leave/enums/SystemSourceType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/leave/service/TeaminateAndUndoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/leave/service/base/LeaveAuditService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/leave/service/base/LeaveInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/leave/service/base/LeaveStudentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/leave/service/base/LeaveTeacherService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/leave/service/base/LeaveTeaminateService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/leave/service/base/LeaveUndoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/mapstructTest/EntryMapping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/mapstructTest/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/mapstructTest/StudentDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/util/IdentityHashCodeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/util/excelview/AbstractSupportPagedExcelView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/util/excelview/ExcelTemplate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/util/excelview/ExcelTemplateFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/util/excelview/ExcelWithBuildTemplate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/util/excelview/Itor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/util/excelview/PagedExcelView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/util/excelview/util/ExcelValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/util/excelview/util/PagedExcelUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/study_shiro.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/study_shiro.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hj/mapstructTest/contextTest/VehicleMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hj/SampleStarter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hj/SampleStarter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hj/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hj/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hj/lombokTest/TestLomBok.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hj/lombokTest/TestLomBok.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hj/util/DateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hj/util/DateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hj/util/excel/DataUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hj/util/excel/DataUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hj/util/excel/ExcelUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hj/util/excel/ExcelUtil.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/../IronMan/marvel-web/target/" />
@@ -94,11 +43,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hj/SampleStarter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="56" selection-start-line="56" selection-end-line="56" />
+            <state relative-caret-position="282">
+              <caret line="50" column="31" lean-forward="true" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hj/mapstructTest/contextTest/VehicleMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -111,15 +69,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hj/entity/leave/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="420" column="2" selection-start-line="420" selection-start-column="2" selection-end-line="420" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -176,8 +125,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -217,7 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/hj/entity/leave/Page.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hj/entity/leave/LeaveListBaseDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hj/entity/leave/LeaveCalendarListDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hj/entity/leave/LeaveStudentInfo.java" />
@@ -268,6 +216,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/hj/mapstructTest/StudentDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hj/SampleStarter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hj/mapstructTest/EntryMapping.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hj/mapstructTest/contextTest/VehicleMapper.java" />
       </list>
     </option>
   </component>
@@ -413,6 +362,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="hj" type="462c0819:PsiDirectoryNode" />
               <item name="mapstructTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="study_shiro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="study_shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hj" type="462c0819:PsiDirectoryNode" />
+              <item name="mapstructTest" type="462c0819:PsiDirectoryNode" />
+              <item name="contextTest" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="study_shiro" type="b2602c69:ProjectViewProjectNode" />
@@ -725,7 +684,7 @@
       <workItem from="1561360010935" duration="9669000" />
       <workItem from="1562730668566" duration="610000" />
       <workItem from="1562839511362" duration="3000" />
-      <workItem from="1563348937319" duration="3783000" />
+      <workItem from="1563348937319" duration="4810000" />
     </task>
     <servers />
   </component>
@@ -762,7 +721,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178203000" />
+    <option name="totallyTimeSpent" value="179230000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -775,8 +734,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="982" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2802198" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2802198" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -788,11 +748,11 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32951945" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993895" weight="0.41235954" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3988764" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3988764" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32921347" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3272311" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3269663" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50061053" side_tool="true" weight="0.3280899" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3269663" />
@@ -846,12 +806,6 @@
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/hj/SampleStarter.java</url>
-          <line>54</line>
-          <properties />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -865,13 +819,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hj/leave/api/LeaveCommon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hj/leave/service/base/LeaveAuditService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1248,8 +1195,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hj/SampleStarter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="282">
+          <caret line="50" column="31" lean-forward="true" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hj/mapstructTest/contextTest/VehicleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
