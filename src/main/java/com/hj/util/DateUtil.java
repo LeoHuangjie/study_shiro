@@ -13,8 +13,15 @@ import java.util.*;
  */
 public class DateUtil {
 
-    private static final String DATE_FORMAT_STR = "yyyy-MM-dd HH:mm:ss";
+    private static final String DATE_FORMAT_STR = "yyyy-MM-dd HH:mm";
     private static final String DATE_FORMAT_PAR = "yyyy-MM-dd";
+
+
+    /**
+     * date转String
+     */
+
+
 
     /**
      * 计算两个日期之间的天数
@@ -200,6 +207,32 @@ public class DateUtil {
 
 
     /**
+     * 比较两个时间段是否有交集
+     * @param formDate1 时间段1的开始时间
+     * @param toDate1 时间段1的结束时间
+     * @param fromDate2 时间段2的开始时间
+     * @param toDate2 时间段2的结束时间
+     * @return true 有交集， false 没有交集
+     */
+    public static Boolean compareHaveIntersection (String formDate1, String toDate1, String fromDate2, String toDate2) {
+        int compareFF = compareTwoDate(formDate1, fromDate2);
+        int compareTF = compareTwoDate(toDate1, fromDate2);
+        int compareFT = compareTwoDate(formDate1, toDate2);
+        int compareTT = compareTwoDate(toDate1, toDate2);
+
+        if (compareFF < 0 && compareTF > 1) {
+            return true;
+        } else if (compareFF > 0 &&  compareTT < 0) {
+            return true;
+        } else if (compareFT < 0 && compareTT > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
+    /**
      * 将短时间格式字符串yyyy-MM-dd转换为时间
      *
      * @param strDate
@@ -209,6 +242,12 @@ public class DateUtil {
         ParsePosition pos = new ParsePosition(0);
         SimpleDateFormat sdf = new SimpleDateFormat(DATE_FORMAT_PAR);
         return sdf.parse(strDate, pos);
+    }
+
+
+    public static String dateToString (Date date) {
+        SimpleDateFormat sdf = new SimpleDateFormat(DATE_FORMAT_STR);
+        return sdf.format(date);
     }
 
 

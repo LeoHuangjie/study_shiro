@@ -55,20 +55,20 @@ public class DataUtil {
         return head;
     }
 
-    public static List<ExcelWriteUser> createTestListJavaMode(){
-        List<ExcelWriteUser> model1s = new ArrayList<ExcelWriteUser>();
-        for (int i = 0; i <10000 ; i++) {
-            ExcelWriteUser model1 = new ExcelWriteUser();
-            model1.setId(i);
-            model1.setAge(i);
-            model1.setDelete((byte) 0);
-            model1.setName("aaa"+i);
-            model1.setSex((byte) 1);
-            model1.setCreateTime(new Date());
-            model1s.add(model1);
-        }
-        return model1s;
-    }
+//    public static List<ExcelWriteUser> createTestListJavaMode(){
+//        List<ExcelWriteUser> model1s = new ArrayList<ExcelWriteUser>();
+//        for (int i = 0; i <10000 ; i++) {
+//            ExcelWriteUser model1 = new ExcelWriteUser();
+//            model1.setId(i);
+//            model1.setAge(i);
+//            model1.setDelete((byte) 0);
+//            model1.setName("aaa"+i);
+//            model1.setSex((byte) 1);
+//            model1.setCreateTime(new Date());
+//            model1s.add(model1);
+//        }
+//        return model1s;
+//    }
 
     public static TableStyle createTableStyle() {
         TableStyle tableStyle = new TableStyle();

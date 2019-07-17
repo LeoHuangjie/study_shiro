@@ -23,8 +23,8 @@ public class TestLomBok {
     @SneakyThrows
     public void test1 () {
         //val 用于修饰不可变变量，var 修饰可变变量
-        val a = "123";
-
-        Integer num = 123;
+//        val a = "123";
+//
+//        Integer num = 123;
     }
 }

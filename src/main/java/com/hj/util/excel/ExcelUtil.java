@@ -9,6 +9,7 @@ import com.alibaba.excel.metadata.BaseRowModel;
 import com.alibaba.excel.metadata.Sheet;
 import com.alibaba.excel.metadata.Table;
 import com.alibaba.excel.support.ExcelTypeEnum;
+import com.alibaba.excel.util.StyleUtil;
 import com.google.common.collect.Lists;
 import com.hj.entity.excel.BaseReadModel;
 import com.hj.util.ExceptionMessageUtil;
@@ -187,7 +188,8 @@ public class ExcelUtil {
         //写sheet sheet2  模型上打有表头的注解，合并单元格
         Sheet sheet = new Sheet(2, 3, clazz);
         //设置单元格格式
-//        sheet.setTableStyle(createTableStyle());
+        sheet.setTableStyle(createTableStyle());
+
         writer.write(modelList, sheet);
 
         writer.finish();

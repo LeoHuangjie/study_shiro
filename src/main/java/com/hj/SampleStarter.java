@@ -1,6 +1,10 @@
 package com.hj;
 
+import com.alibaba.fastjson.JSON;
 import com.battcn.boot.request.annotation.EnableI18n;
+import com.hj.mapstructTest.EntryMapping;
+import com.hj.mapstructTest.Student;
+import com.hj.mapstructTest.StudentDto;
 import com.hj.service.impl.CelueMoshi;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,6 +17,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.Date;
 
 @SpringBootApplication
 @EnableTransactionManagement
@@ -35,7 +40,26 @@ public class SampleStarter {
 
         bean1.test18In();
 
+
+        Student student = new Student();
+        student.setId(1);
+        student.setName("123");
+        student.setAge(1);
+        student.setBeginTime(new Date());
+        student.setEndTime(new Date());
+        student.setClassId(1);
+        student.setLessonId(1);
+        student.setSex(1);
+        StudentDto to = EntryMapping.ENTRY_MAPPER.to(student);
+
+        Student from = EntryMapping.ENTRY_MAPPER.from(to);
+
+        System.out.println(JSON.toJSONString(to));
+
+        System.out.println(JSON.toJSONString(from));
+
         blockMainWithSocket(configurableApplicationContext);
+
 
     }
 
