@@ -79,11 +79,16 @@ public class ExportExcel {
             createTeacherTimeInfo(sheet,excelBody,dateCloumNumHashMap,numValueMap, workbook);
 
         }
-        OutputStream outputStream = response.getOutputStream();// 打开流
-        workbook.write(outputStream);// HSSFWorkbook写入流
-        workbook.close();// HSSFWorkbook关闭
-        outputStream.flush();// 刷新流
-        outputStream.close();// 关闭流
+        // 打开流
+        OutputStream outputStream = response.getOutputStream();
+        // XSSSFWorkbook写入流
+        workbook.write(outputStream);
+        // XSSSFWorkbook关闭
+        workbook.close();
+        // 刷新流
+        outputStream.flush();
+        // 关闭流
+        outputStream.close();
         return workbook;
     }
 
