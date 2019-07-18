@@ -15,6 +15,7 @@ public class DateUtil {
 
     private static final String DATE_FORMAT_STR = "yyyy-MM-dd HH:mm";
     private static final String DATE_FORMAT_PAR = "yyyy-MM-dd";
+    private static final String DATE_FORMAT_HOUR = "HH:mm";
 
 
     /**
@@ -250,6 +251,23 @@ public class DateUtil {
         return sdf.format(date);
     }
 
+    public static Date stringToDate (String date) {
+        ParsePosition pos = new ParsePosition(0);
+        SimpleDateFormat sdf = new SimpleDateFormat(DATE_FORMAT_STR);
+        return sdf.parse(date, pos);
+    }
+
+    public static String dateHourToString (Date date) {
+        SimpleDateFormat sdf = new SimpleDateFormat(DATE_FORMAT_HOUR);
+        return sdf.format(date);
+    }
+
+    public static Date stringHourToDate (String date) {
+        ParsePosition pos = new ParsePosition(0);
+        SimpleDateFormat sdf = new SimpleDateFormat(DATE_FORMAT_HOUR);
+        return sdf.parse(date, pos);
+    }
+
 
     /**
      * 计算指定的日期之前的天数
@@ -359,6 +377,10 @@ public class DateUtil {
 
 
     public static void main(String[] args) {
+
+        Date date = stringHourToDate("10:00");
+        String string = dateHourToString(date);
+
         //得到两个日期之间的所有天的列表
         getDayListOfTwoDate("2016-12-10 08:00","2016-12-10 18:00");
 
