@@ -2,6 +2,8 @@ package com.hj;
 
 import com.alibaba.fastjson.JSON;
 import com.battcn.boot.request.annotation.EnableI18n;
+import com.hj.applicationListener.SpringApplicationUtil;
+import com.hj.applicationListener.StudentEvent;
 import com.hj.mapstructTest.EntryMapping;
 import com.hj.mapstructTest.Student;
 import com.hj.mapstructTest.StudentDto;
@@ -21,7 +23,7 @@ import java.util.Date;
 
 @SpringBootApplication
 @EnableTransactionManagement
-@EnableI18n
+//@EnableI18n
 //@ImportResource()//config springxml
 public class SampleStarter {
 
@@ -40,6 +42,11 @@ public class SampleStarter {
 
         bean1.test18In();
 
+//        SpringApplicationUtil bean2 = configurableApplicationContext.getBean(SpringApplicationUtil.class);
+
+//        bean2.pustEvent(new StudentEvent(1));
+
+        System.out.println("--------OK！！！！！！-------");
 
         Student student = new Student();
         student.setId(1);
